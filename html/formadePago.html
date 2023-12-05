@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forma de Pago</title>
+	</head>
+	<body>
+		<header>
+			<img src="" alt="logo" width="20%" />
+			<h4>MyTiendaReleevant</h4>
+
+			<a href="carrito.html">Carrito</a>
+			<span>flecha</span>
+			<a href="formadePago.html">Forma de pago</a>
+			<span>flecha</span>
+			<a href="envio.html">Finalizar pedido</a>
+		</header>
+
+		<main>
+			<div>
+				<h2>Forma de pago</h2>
+				<a href="productos.html">Seguir comprando</a>
+			</div>
+
+			<section class="tarjetas">
+				<div class="tarjetas-guardadas">
+					<h3>Mis tarjetas</h3>
+
+					<form action="">
+						<input type="radio" name="tarjetas" id="tarjeta1" />
+						<label for="tarjeta1"
+							><img src="svg tarjeta" alt="" />Mastercard ...6547</label
+						>
+						<input type="radio" name="tarjetas" id="tarjeta2" />
+						<label for="tarjeta2"
+							><img src="svg tarjeta" alt="" />Mastercard ...6547</label
+						>
+						<input type="radio" name="tarjetas" id="tarjeta3" />
+						<label for="tarjeta3"
+							><img src="svg tarjeta" alt="" />Mastercard ...6547</label
+						>
+						<!-- <button type="submit">Pagar con esta tarjeta</button> -->
+						<a href="envio.html">Pagar con esta tarjeta</a>
+					</form>
+				</div>
+
+				<div class="tarjetas-nuevas">
+					<h3>Añadir nueva tarjeta</h3>
+
+					<form action="">
+						<input
+							type="number"
+							name="numeroTarjeta"
+							id="numeroTarjeta"
+							placeholder="Número de la tajeta"
+						/>
+						<input
+							type="text"
+							name="titular"
+							id="titular"
+							placeholder="Titular de la tarjeta"
+						/>
+						<input
+							type="date"
+							name="caducidad"
+							id="caducidad"
+							placeholder="Caducidad"
+						/>
+						<input
+							type="number"
+							name="codigo"
+							id="codigo"
+							placeholder="Código seguro"
+						/>
+
+						<button type="submit">Añadir a mis tarjetas</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<section class="adjetivos">
+			<div class="adjetivos-objetos">
+				<img src="icon" alt="" width="15%" />
+				<div>
+					<h5>Pago Seguro</h5>
+					<h6>100% Garantizado</h6>
+				</div>
+			</div>
+			<div class="adjetivos-objetos">
+				<img src="icon" alt="" width="15%" />
+				<div>
+					<h5>Envío Gratis</h5>
+					<h6>En pedidos de +100€</h6>
+				</div>
+			</div>
+			<div class="adjetivos-objetos">
+				<img src="icon" alt="" width="15%" />
+				<div>
+					<h5>2 años de garantía</h5>
+					<h6>En todos los gadgets</h6>
+				</div>
+			</div>
+			<div class="adjetivos-objetos">
+				<img src="icon" alt="" width="15%" />
+				<div>
+					<h5>Ofertas únicas</h5>
+					<h6>Precios de mayorista</h6>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-izq">
+				<img src="logo" alt="" width="15%" />
+				<h4>MyTiendaReleevant</h4>
+
+				<div>
+					<ul>
+						<li><a href="#">Centro de ayuda</a></li>
+						<li><a href="#">Servicio al consumidor</a></li>
+						<li><a href="#">Escribenos</a></li>
+						<li><a href="#">Servicio Telefónico</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<ul>
+						<li><a href="#">Politica de privacidad</a></li>
+						<li><a href="#">Condiciones de compra</a></li>
+						<li><a href="#">Opiniones de clientes</a></li>
+						<li><a href="#">Avisos de privacidad y cookies</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-izq">
+				<div>
+					<h5>Únete a nuestra newsletter y recibe ofertas diarias</h5>
+					<form action="">
+						<input type="email" name="email" id="email" placeholder="Email" />
+						<button type="submit">Suscribir</button>
+						<input
+							type="checkbox"
+							name="privacidad"
+							id="privacidad"
+							value="aceptar"
+						/>
+						<label for="privacidad"
+							>Acepto la <a href="privacidad.html">politica de privacidad</a> de
+							esta web</label
+						>
+					</form>
+				</div>
+
+				<hr />
+
+				<div>
+					<h5>Siguenos en redes</h5>
+
+					<img src="../assets/icons/facebook.webp" alt="fb" width="10%" />
+					<img src="../assets/icons/youtube.svg" alt="yt" width="10%" />
+					<img src="../assets/icons/twitch.svg" alt="tw" width="10%" />
+					<img src="../assets/icons/instagram.png" alt="ig" width="10%" />
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
