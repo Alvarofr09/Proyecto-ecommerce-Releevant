@@ -1,0 +1,13 @@
+.adjetivos {
+	display: flex;
+	justify-content: space-around;
+}
+
+.adjetivos-objetos {
+	display: flex;
+	align-items: center;
+}
+
+.material-icons {
+	font-size: 50px;
+}
