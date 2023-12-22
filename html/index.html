@@ -3,11 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
-		<title>Releevant Ecommerce</title>
+
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/adjetives.css" />
+		<script src="../js/index.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -31,47 +38,101 @@
 		</nav>
 
 		<main>
-			<div class="incio-sesion">
-				<h3>Iniciar sesión</h3>
-				<p>Accede con tus datos anteriores</p>
+			<section class="container" id="container">
+				<div class="form-container sign-up">
+					<form action="">
+						<h3>Regístrate</h3>
+						<div class="social-icons">
+							<a href="#" class="icons"
+								><img src="../assets/icons/facebook.webp" alt="" width="55%"
+							/></a>
+							<a href="#" class="icons"
+								><img src="../assets/icons/instagram.png" alt="" width="55%"
+							/></a>
+							<a href="#" class="icons"
+								><img src="../assets/icons/twitch.svg" alt="" width="55%"
+							/></a>
+							<a href="#" class="icons"
+								><img src="../assets/icons/youtube.svg" alt="" width="55%"
+							/></a>
+						</div>
+						<span>o usa tu correo y contraseña</span>
 
-				<form action="">
-					<input type="email" name="email" id="email" placeholder="Email" />
-					<input
-						type="password"
-						name="contraseña"
-						id="contraseña"
-						placeholder="Contraseña"
-					/>
-					<button type="submit">Iniciar sesion</button>
-				</form>
-			</div>
+						<input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+						<input
+							type="text"
+							name="apellidos"
+							id="apellidos"
+							placeholder="Apellidos"
+						/>
+						<input
+							type="email"
+							name="email"
+							id="email-registro"
+							placeholder="Email"
+						/>
+						<input
+							type="password"
+							name="contraseña"
+							id="contraseña-registro"
+							placeholder="Contraseña"
+						/>
+						<button type="submit">Crear tu cuenta ahora</button>
+					</form>
+				</div>
+				<div class="form-container sign-in">
+					<form action="">
+						<h3>Inicio sesión</h3>
+						<div class="social-icons">
+							<a href="#" class="icons"
+								><img src="../assets/icons/facebook.webp" alt="" width="55%"
+							/></a>
+							<a href="#" class="icons"
+								><img src="../assets/icons/instagram.png" alt="" width="55%"
+							/></a>
+							<a href="#" class="icons"
+								><img src="../assets/icons/twitch.svg" alt="" width="55%"
+							/></a>
+							<a href="#" class="icons"
+								><img src="../assets/icons/youtube.svg" alt="" width="55%"
+							/></a>
+						</div>
+						<span>Accede con tus datos anteriores</span>
 
-			<div class="registro">
-				<h3>Regístrate</h3>
-				<p>
-					Crea una cuenta en My Releevant Store para conseguir tu primer
-					descuento como cliente
-				</p>
+						<input
+							type="email"
+							name="email"
+							id="email-login"
+							placeholder="Email"
+						/>
+						<input
+							type="password"
+							name="contraseña"
+							id="contraseña-login"
+							placeholder="Contraseña"
+						/>
+						<button type="submit">Iniciar sesion</button>
+					</form>
+				</div>
 
-				<form action="">
-					<input type="text" name="nombre" id="nombre" placeholder="Nombre" />
-					<input
-						type="text"
-						name="apellidos"
-						id="apellidos"
-						placeholder="Apellidos"
-					/>
-					<input type="email" name="email" id="email" placeholder="Email" />
-					<input
-						type="password"
-						name="contraseña"
-						id="contraseña"
-						placeholder="Contraseña"
-					/>
-					<button type="submit">Crear tu cuenta ahora</button>
-				</form>
-			</div>
+				<div class="toggle-container">
+					<div class="toggle">
+						<div class="toggle-panel toggle-left">
+							<h1>¡Registrate!</h1>
+							<p>
+								Crea una cuenta en My Releevant Store para conseguir tu primer
+								descuento como cliente
+							</p>
+							<button class="hidden" id="login">Sign-up</button>
+						</div>
+						<div class="toggle-panel toggle-right">
+							<h1>Inicia Sesión</h1>
+							<p>Inicia sesion con tus datos</p>
+							<button class="hidden" id="registro">Sign-in</button>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<section class="adjetivos">
@@ -107,19 +168,22 @@
 
 		<footer>
 			<div class="footer-izq">
-				<img src="logo" alt="" width="15%" />
-				<h4>MyTiendaReleevant</h4>
+				<div class="logo">
+					<img
+						src="../assets/images/logo-sin-fondo.png"
+						alt="logo empresa"
+						width="60%"
+					/>
+				</div>
 
-				<div>
+				<div class="lista">
 					<ul>
 						<li><a href="#">Centro de ayuda</a></li>
 						<li><a href="#">Servicio al consumidor</a></li>
 						<li><a href="#">Escribenos</a></li>
 						<li><a href="#">Servicio Telefónico</a></li>
 					</ul>
-				</div>
 
-				<div>
 					<ul>
 						<li><a href="#">Politica de privacidad</a></li>
 						<li><a href="#">Condiciones de compra</a></li>
@@ -129,12 +193,12 @@
 				</div>
 			</div>
 
-			<div class="footer-izq">
+			<div class="footer-der">
 				<div>
 					<h5>Únete a nuestra newsletter y recibe ofertas diarias</h5>
 					<form action="">
 						<input type="email" name="email" id="email" placeholder="Email" />
-						<button type="submit">Suscribir</button>
+						<button type="submit" id="suscribir">Suscribir</button>
 						<input
 							type="checkbox"
 							name="privacidad"
@@ -150,13 +214,22 @@
 
 				<hr />
 
-				<div>
-					<h5>Siguenos en redes</h5>
-
-					<img src="../assets/icons/facebook.webp" alt="fb" width="10%" />
-					<img src="../assets/icons/youtube.svg" alt="yt" width="10%" />
-					<img src="../assets/icons/twitch.svg" alt="tw" width="10%" />
-					<img src="../assets/icons/instagram.png" alt="ig" width="10%" />
+				<div class="social-icons">
+					<h3>Siguenos en las redes</h3>
+					<div class="iconos">
+						<a href="#" class="icons"
+							><img src="../assets/icons/facebook.webp" alt="" width="75%"
+						/></a>
+						<a href="#" class="icons"
+							><img src="../assets/icons/instagram.png" alt="" width="75%"
+						/></a>
+						<a href="#" class="icons"
+							><img src="../assets/icons/twitch.svg" alt="" width="75%"
+						/></a>
+						<a href="#" class="icons"
+							><img src="../assets/icons/youtube.svg" alt="" width="75%"
+						/></a>
+					</div>
 				</div>
 			</div>
 		</footer>
