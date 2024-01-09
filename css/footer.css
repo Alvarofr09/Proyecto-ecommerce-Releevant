@@ -1,3 +1,9 @@
+.footer {
+	width: 100%;
+	height: 347px;
+	overflow-y: auto;
+}
+
 footer {
 	background-color: #575f5f;
 	display: flex;
@@ -16,62 +22,62 @@ footer a {
 	text-decoration: none;
 }
 
-/* h5 {
+h5 {
 	margin-bottom: 25px;
-} */
+}
 
-/* hr {
+hr {
 	margin: 25px 0;
-} */
+}
 
-/* .footer-izq ul {
+.footer-izq ul {
 	list-style: none;
-} */
+}
 
-/* .footer-izq ul a {
+.footer-izq ul a {
 	color: #fff;
 	text-decoration: none;
 	line-height: 25px;
-} */
+}
 
-/* .logo {
+.logo {
 	margin-left: 10%;
-} */
+}
 
-/* .lista {
+.lista {
 	display: flex;
 	justify-content: center;
 	gap: 75px;
-} */
+}
 
-/* #email {
+#email {
 	height: 50px;
 	width: 60%;
-} */
+}
 
-/* #suscribir {
+#suscribir {
 	border: none;
 	background-color: #00adb5;
 	color: #fff;
 	padding: 17px 30px;
 	width: 39%;
-} */
+}
 
-/* #email,
+#email,
 #suscribir {
 	margin-bottom: 15px;
-} */
+}
 
-/* #privacidad {
+#privacidad {
 	display: none;
-} */
+}
 
-/* label {
+label {
 	position: relative;
 	padding-left: 1.3rem;
-} */
+}
 
-/* label::after {
+label::after {
 	content: "";
 	border: 1px solid #95a5a6;
 	border-radius: 3px;
@@ -81,26 +87,26 @@ footer a {
 	padding: 1px;
 	left: 0;
 	top: 2px;
-} */
+}
 
-/* #privacidad:checked + label:after {
+#privacidad:checked + label:after {
 	border-color: #00adb5;
 	color: #00adb5;
 	content: "\2713";
 	padding: 1px;
-} */
+}
 
-/* footer .social-icons {
+footer .social-icons {
 	display: flex;
 	justify-content: space-around;
-} */
+}
 
-/* footer .social-icons a {
+footer .social-icons a {
 	border: none;
-} */
+}
 
-/* footer .social-icons h3 {
+footer .social-icons h3 {
 	margin: 0;
 	display: flex;
 	align-items: center;
-} */
+}
