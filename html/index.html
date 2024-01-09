@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>PixelPlay</title>
+		<link rel="icon" href="../assets/images/logo_chico.png" type="image/png" />
 
 		<link
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -16,13 +17,22 @@
 	</head>
 	<body>
 		<header>
-			<img src="" alt="logo" width="20%" />
-			<h4>MyTiendaReleevant</h4>
+			<div class="header_logo">
+				<img
+					class="header_logo_img"
+					src="../assets/images/logo_chico.png"
+					alt="logo"
+					width="20%"
+				/>
+				<h4>PixelPlay</h4>
+			</div>
 			<input type="search" name="" id="" placeholder="Busca aqui tu producto" />
-			<a href="carrito.html"
-				><span class="material-icons"> shopping_cart </span>Carrito
-				<span>1</span></a
-			>
+			<div class="header_carrito">
+				<a href="carrito.html"
+					><span class="material-icons header_icon"> shopping_cart </span>
+					<span class="header_carrito_count">1</span>
+				</a>
+			</div>
 		</header>
 
 		<nav>
@@ -135,28 +145,32 @@
 
 		<section class="adjetivos">
 			<div class="adjetivos-objetos">
-				<span class="material-icons"> shield </span>
+				<span class="material-icons adjetivos-objetos_icon"> shield </span>
 				<div>
 					<h5 class="adjetivos-objetos_title">Pago Seguro</h5>
 					<h6>100% Garantizado</h6>
 				</div>
 			</div>
 			<div class="adjetivos-objetos">
-				<span class="material-icons"> local_shipping </span>
+				<span class="material-icons adjetivos-objetos_icon">
+					local_shipping
+				</span>
 				<div>
 					<h5 class="adjetivos-objetos_title">Envío Gratis</h5>
 					<h6>En pedidos de +100€</h6>
 				</div>
 			</div>
 			<div class="adjetivos-objetos">
-				<span class="material-icons"> verified_user </span>
+				<span class="material-icons adjetivos-objetos_icon">
+					verified_user
+				</span>
 				<div>
 					<h5 class="adjetivos-objetos_title">2 años de garantía</h5>
 					<h6>En todos los gadgets</h6>
 				</div>
 			</div>
 			<div class="adjetivos-objetos">
-				<span class="material-icons"> inventory </span>
+				<span class="material-icons adjetivos-objetos_icon"> inventory </span>
 				<div>
 					<h5 class="adjetivos-objetos_title">Ofertas únicas</h5>
 					<h6>Precios de mayorista</h6>
