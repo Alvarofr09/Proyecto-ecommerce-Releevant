@@ -1,6 +1,8 @@
 .adjetivos {
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 15px;
+	place-items: center;
 }
 
 .adjetivos-objetos {
@@ -10,4 +12,15 @@
 
 .material-icons {
 	font-size: 50px;
+	margin-right: 5px;
+}
+
+.adjetivos-objetos_title {
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 750px) {
+	.adjetivos {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
