@@ -1,0 +1,36 @@
+header {
+	display: flex;
+}
+
+.header_logo {
+	display: flex;
+	align-items: center;
+}
+
+.header_logo_img {
+	height: 50px;
+	width: 50px;
+}
+
+.header_carrito {
+	position: relative;
+}
+
+.header_carrito_count {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header_icon {
+	font-size: 55px;
+	color: black;
+}
