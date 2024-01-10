@@ -1,3 +1,6 @@
+/*
+	* Darle el formato basico del footer.
+*/
 footer {
 	background-color: #575f5f;
 	display: flex;
@@ -6,24 +9,33 @@ footer {
 	color: #fff;
 }
 
+/*
+	* Separar los 2 divs del footer y que cada uno ocupe la mitad de el.
+*/
 footer > div {
 	margin: 50px 20px;
 	width: 50%;
 }
 
+/*
+	* Formato de los links del footer
+*/
 footer a {
 	color: #00adb5;
 	text-decoration: none;
 }
 
-h5 {
+footer h5 {
 	margin-bottom: 25px;
 }
 
-hr {
+footer hr {
 	margin: 25px 0;
 }
 
+/*
+	* Formato de la lista de paginas del footer
+*/
 .footer-izq ul {
 	list-style: none;
 }
@@ -34,16 +46,22 @@ hr {
 	line-height: 25px;
 }
 
-.logo {
-	margin-left: 10%;
-}
-
 .lista {
 	display: flex;
 	justify-content: center;
 	gap: 75px;
 }
 
+/*
+	* Separar el logo
+*/
+.logo {
+	margin-left: 10%;
+}
+
+/*
+	* Formato del formulario de NewsLetter
+*/
 #email {
 	height: 50px;
 	width: 60%;
@@ -62,6 +80,9 @@ hr {
 	margin-bottom: 15px;
 }
 
+/*
+	* Formato bonito del checkbox.
+*/
 .cyberpunk-checkbox {
 	appearance: none;
 	width: 20px;
@@ -102,6 +123,9 @@ hr {
 	align-items: center;
 }
 
+/*
+	* Formato de las redes sociales del footer.
+*/
 .footer_social-icons {
 	display: flex;
 	justify-content: space-between;
@@ -129,7 +153,13 @@ hr {
 	width: 30px;
 }
 
-@media screen and (max-width: 920px) {
+/*
+	* Media query de menos de 930px
+*/
+@media screen and (max-width: 930px) {
+	/*
+		* Poner el footer en columna en vez de en linea
+	*/
 	footer {
 		flex-direction: column;
 	}
@@ -152,16 +182,26 @@ hr {
 		gap: 20px;
 	}
 
+	/*
+		* Poner los iconos de las redes debajo del texto.
+	*/
 	.footer_social-icons {
 		flex-direction: column;
 		align-items: center;
 	}
 
+	/*
+		* Poner un border top enblaco como si fuera un hr
+	*/
 	.footer-der {
 		border-top: 1px solid #fff;
 	}
 }
 
+/*
+	* Media query de maximo de 475px
+	? Mirar las medias de pantallas, (tablets, movil, etc). 
+*/
 @media screen and (max-width: 475px) {
 	#email,
 	#suscribir {

@@ -1,3 +1,6 @@
+/*
+	* Hacer que los adjetivos esten en un grid de una linea con 4 columnas.
+*/
 .adjetivos {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -10,6 +13,9 @@
 	align-items: center;
 }
 
+/*
+	* Darle el formato de tamaño al icono y los titulos.
+*/
 .adjetivos-objetos_icon {
 	font-size: 50px;
 	margin-right: 5px;
@@ -19,6 +25,9 @@
 	margin-bottom: 5px;
 }
 
+/*
+	* Media query de 750px, que hace que el grid sea de 2 colunmas y filas.
+*/
 @media screen and (max-width: 750px) {
 	.adjetivos {
 		grid-template-columns: repeat(2, 1fr);

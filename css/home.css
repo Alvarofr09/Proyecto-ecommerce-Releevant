@@ -1,17 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Montserrat", "Kanit";
-}
-
-body {
-	background-color: #95a5a6;
-	background: linear-gradient(to right, #e2e2e2, #95a5a6);
-}
-
+/*
+	* Centrar todo el main
+*/
 main {
 	display: flex;
 	align-items: center;
@@ -20,6 +9,9 @@ main {
 	height: 100vh;
 }
 
+/*
+	* Formato del container y sus elementos principales.
+*/
 .container {
 	background-color: #fff;
 	border-radius: 30px;
@@ -51,6 +43,9 @@ main {
 	margin: 15px 0 10px;
 }
 
+/*
+	* Formato de los botones del index
+*/
 button {
 	background-color: #00adb5;
 	color: #fff;
@@ -70,6 +65,9 @@ button.hidden {
 	border-color: #fff;
 }
 
+/*
+	* Formato de los form del container
+*/
 .container form {
 	background-color: #fff;
 	display: flex;
@@ -80,6 +78,9 @@ button.hidden {
 	height: 100%;
 }
 
+/*
+	* Formato de todoslos input menos los checkboxs
+*/
 input:not([type="checkbox"]) {
 	background-color: #eee;
 	border: none;
@@ -91,6 +92,9 @@ input:not([type="checkbox"]) {
 	outline: none;
 }
 
+/*
+	* Fromato de los contenedores de los formularios
+*/
 .form-container {
 	position: absolute;
 	top: 0;

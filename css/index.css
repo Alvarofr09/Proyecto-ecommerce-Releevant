@@ -1,8 +1,17 @@
+/*
+	Importes fincipales de mi pagina.
+	* Posible actualizacion constante
+	? Mirar librerias para hacer mejor mi pagina
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url("./header.css");
 @import url("./footer.css");
 @import url("./adjetives.css");
 
+/*
+	* Resetear los valores 
+*/
 * {
 	margin: 0;
 	padding: 0;
@@ -10,11 +19,18 @@
 	font-family: "Montserrat", "Kanit";
 }
 
+/*
+	* Poner el fondo a todo el cuerpo de la pagina
+*/
 body {
-	background-color: #95a5a6;
 	background: linear-gradient(to right, #e2e2e2, #95a5a6);
 }
 
+/*
+	* Darle formato a la barra de scroll lateral
+	? Mejorarla
+	TODO: Mirar mas formatos para poder mejorarla
+*/
 ::-webkit-scrollbar {
 	width: 8px;
 	margin-right: 8px;
