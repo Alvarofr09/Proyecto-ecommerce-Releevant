@@ -73,6 +73,7 @@ footer hr {
 	color: #fff;
 	padding: 17px 30px;
 	width: 39%;
+	margin-left: 0;
 }
 
 #email,
@@ -121,6 +122,7 @@ footer hr {
 	user-select: none;
 	display: flex;
 	align-items: center;
+	margin-left: 0;
 }
 
 /*
