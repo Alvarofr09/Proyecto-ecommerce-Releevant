@@ -13,17 +13,10 @@
 	* Resetear los valores 
 */
 * {
-	margin: 0;
+	margin: 10px;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Montserrat", "Kanit";
-}
-
-/*
-	* Poner el fondo a todo el cuerpo de la pagina
-*/
-body {
-	background: linear-gradient(to right, #e2e2e2, #95a5a6);
 }
 
 /*
