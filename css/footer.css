@@ -62,7 +62,7 @@ footer hr {
 /*
 	* Formato del formulario de NewsLetter
 */
-#email {
+/* #email {
 	height: 50px;
 	width: 60%;
 }
@@ -79,6 +79,48 @@ footer hr {
 #email,
 #suscribir {
 	margin-bottom: 15px;
+} */
+
+.input-group {
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.input {
+	margin: 0;
+	min-height: 50px;
+	width: 60%;
+	padding: 0 1rem;
+	color: #fff;
+	font-size: 15px;
+	border: 1px solid #30cfd0;
+	border-radius: 6px 0 0 6px;
+	background-color: transparent;
+}
+
+.button--submit {
+	width: 40%;
+	margin: 0;
+	min-height: 50px;
+	padding: 0.5em 1em;
+	border: none;
+	border-radius: 0 6px 6px 0;
+	background-color: #30cfd0;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.button--submit:hover {
+	background-color: #00adb5;
+}
+
+.input:focus,
+.input:focus-visible {
+	border-color: #00adb5;
+	outline: none;
 }
 
 /*

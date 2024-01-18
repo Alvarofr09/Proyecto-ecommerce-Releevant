@@ -18,6 +18,12 @@ main {
 	margin: 20px;
 }
 
+.container:first-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .container:nth-child(2) {
 	margin-left: 20px;
 }
@@ -73,7 +79,8 @@ main {
 	text-decoration: none;
 }
 
-.form .login-button {
+.form .login-button,
+.form .signin-button {
 	display: block;
 	width: 100%;
 	font-weight: bold;
@@ -91,14 +98,21 @@ main {
 	transition: all 0.2s ease-in-out;
 }
 
-.form .login-button:hover {
+.form .login-button:hover,
+.form .signin-button:hover {
 	transform: scale(1.03);
 	box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
 }
 
-.form .login-button:active {
+.form .login-button:active,
+.form .signin-button:active {
 	transform: scale(0.95);
 	box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.form .apellidoRegistro,
+.form .nombreRegistro {
+	width: 49%;
 }
 
 .agreement {

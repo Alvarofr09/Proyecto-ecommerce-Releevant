@@ -74,22 +74,22 @@
 				<form class="form" action="">
 					<input
 						placeholder="E-mail"
-						id="correo"
-						name="correo"
+						id="correoInicio"
+						name="correoInicio"
 						type="email"
 						class="input"
 						required=""
 					/>
 					<input
 						placeholder="Password"
-						id="contrasena"
-						name="contrasena"
+						id="contrasenaInicio"
+						name="contrasenaInicio"
 						type="password"
 						class="input"
 						required=""
 					/>
-					<span class="forgot-password"><a href="#">Forgot Password ?</a></span>
-					<input value="Sign In" type="submit" class="login-button" />
+					<!-- <span class="forgot-password"><a href="#">Forgot Password ?</a></span> -->
+					<input value="Iniciar sesión" type="submit" class="login-button" />
 				</form>
 
 				<span class="agreement"
@@ -105,23 +105,43 @@
 				</h3>
 				<form class="form" action="">
 					<input
+						placeholder="Nombre"
+						type="text"
+						name="nombreRegistro"
+						id="nombreRegistro"
+						class="input nombreRegistro"
+						required=""
+					/>
+					<input
+						placeholder="Apellidos"
+						type="text"
+						name="apellidoRegistro"
+						id="apellidoRegistro"
+						class="input apellidoRegistro"
+						required=""
+					/>
+					<input
 						placeholder="E-mail"
-						id="correo"
-						name="correo"
+						id="correoRegistro"
+						name="correoRegistro"
 						type="email"
 						class="input"
 						required=""
 					/>
 					<input
 						placeholder="Password"
-						id="contrasena"
-						name="contrasena"
+						id="contrasenaRegistro"
+						name="contrasenaRegistro"
 						type="password"
 						class="input"
 						required=""
 					/>
-					<span class="forgot-password"><a href="#">Forgot Password ?</a></span>
-					<input value="Sign In" type="submit" class="login-button" />
+					<!-- <span class="forgot-password"><a href="#">Forgot Password ?</a></span> -->
+					<input
+						value="Crear tu cuenta ahora"
+						type="submit"
+						class="signin-button"
+					/>
 				</form>
 
 				<span class="agreement"
@@ -195,15 +215,16 @@
 			<div class="footer-der">
 				<div>
 					<h5>Únete a nuestra newsletter y recibe ofertas diarias</h5>
-					<form action="">
-						<input type="email" name="email" id="email" placeholder="Email" />
-						<button type="submit" id="suscribir">Suscribir</button>
-						<label class="cyberpunk-checkbox-label">
-							<input type="checkbox" class="cyberpunk-checkbox" />
-							Acepto la <a href="privacidad.html">politica de privacidad</a> de
-							esta web
-						</label>
-					</form>
+					<div class="input-group">
+						<input
+							type="email"
+							class="input"
+							id="Email"
+							name="Email"
+							placeholder="alvarofriasruiz03@gmail.com"
+						/>
+						<input class="button--submit" value="Subscribe" type="submit" />
+					</div>
 				</div>
 
 				<hr />
