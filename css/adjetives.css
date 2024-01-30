@@ -9,8 +9,18 @@
 }
 
 .adjetivos-objetos {
+	position: relative;
 	display: flex;
 	align-items: center;
+}
+
+.adjetivos-objetos:not(:last-child)::after {
+	content: "";
+	height: 35px;
+	border: 2px solid #edf4f7;
+	position: absolute;
+	border-radius: 10px;
+	right: -65px;
 }
 
 /*
