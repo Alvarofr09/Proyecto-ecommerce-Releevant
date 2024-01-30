@@ -1,5 +1,10 @@
+header,
+nav {
+	margin: 0 10px;
+}
 .header {
 	display: flex;
+	align-items: center;
 }
 
 /*
@@ -29,8 +34,8 @@
 	background-color: #30cfd0;
 	color: black;
 	border-radius: 50%;
-	height: 15px;
-	width: 15px;
+	height: 20px;
+	width: 20px;
 	padding: 2px;
 	display: flex;
 	align-items: center;
@@ -54,13 +59,13 @@
 }
 
 .search_wrap {
-	width: 500px;
+	width: 700px;
 	margin: 30px auto;
 }
 
 .search_wrap .search_box {
 	position: relative;
-	max-width: 500px;
+	max-width: 700px;
 	height: 60px;
 }
 
@@ -75,12 +80,13 @@
 	font-size: 18px;
 	margin: 0;
 	border-radius: 50px;
+	border: 1px solid #575f5f;
 }
 
-.search_wrap .search_box .btn {
+.search_wrap .search_box .search_btn {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -10px;
+	right: -9px;
 	width: 60px;
 	height: 100%;
 	background-color: #30cfd0;
@@ -89,14 +95,47 @@
 	border-radius: 50%;
 }
 
-.search_wrap .search_box .btn:hover {
+.search_wrap .search_box .search_btn:hover {
 	background: #00adb5;
 }
 
-.search_wrap .search_box .btn.btn_common .search {
+.search_wrap .search_box .search_btn.btn_common .search_icon {
 	position: absolute;
-	top: 50%;
+	/* top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+	top: 8px;
+	left: 9px;
 	color: #fff;
+}
+
+/*
+
+	* Estilos de la barra de navegación
+
+*/
+
+nav.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul.nav_list {
+	display: flex;
+	justify-content: space-around;
+}
+
+ul.nav_list.--left {
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav_list_item {
+	display: inline-block;
+	list-style: none;
+}
+
+.nav_list_item_link {
+	text-decoration: none;
+	color: #000000;
 }
