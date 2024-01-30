@@ -3,6 +3,10 @@ main {
 	justify-content: space-around;
 }
 
+.index_container {
+	margin-top: 100px;
+}
+
 .container {
 	max-width: 500px;
 	background: #f8f9fd;
@@ -44,6 +48,7 @@ main {
 }
 
 .form .input {
+	margin: 0;
 	width: 100%;
 	background: white;
 	border: none;
