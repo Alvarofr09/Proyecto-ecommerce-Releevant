@@ -35,8 +35,10 @@
 
 				<div class="search_wrap">
 					<div class="search_box">
-						<div class="btn btn_common">
-							<span class="search material-symbols-outlined"> search </span>
+						<div class="search_btn btn_common">
+							<span class="search_icon material-symbols-outlined">
+								search
+							</span>
 						</div>
 						<input
 							type="text"
@@ -57,17 +59,37 @@
 			</div>
 		</header>
 
-		<nav>
-			<ul>
-				<li><a href="productos.html">Todos los productos</a></li>
-				<li><a href="nosotros.html">Sobre nosotros</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="#">Gadgets</a></li>
-				<li><a href="#">Ofertas</a></li>
+		<nav class="nav">
+			<ul class="nav_list --left">
+				<li class="nav_list_item">
+					<a class="nav_list_item_link" href="productos.html"
+						>Todos los productos</a
+					>
+				</li>
+				<li class="nav_list_item">
+					<a class="nav_list_item_link" href="nosotros.html">Sobre nosotros</a>
+				</li>
+				<li class="nav_list_item">
+					<a class="nav_list_item_link" href="contacto.html">Contacto</a>
+				</li>
+				<li class="nav_list_item">
+					<a class="nav_list_item_link" href="#">Gadgets</a>
+				</li>
+				<li class="nav_list_item">
+					<a class="nav_list_item_link" href="#">Ofertas</a>
+				</li>
+			</ul>
+			<ul class="nav_list --right">
+				<li class="nav_list_item">
+					<a class="nav_list_item_link" href="productos.html">Mis pedidos</a>
+				</li>
+				<li class="nav_list_item">
+					<a class="nav_list_item_link" href="index.html">Logout</a>
+				</li>
 			</ul>
 		</nav>
 
-		<main>
+		<main class="index_container">
 			<section class="container">
 				<div class="heading">Iniciar Sesión</div>
 				<h3 class="sub-heading">Accede a tus datos anteriores</h3>
@@ -185,7 +207,7 @@
 			</div>
 		</section>
 
-		<footer>
+		<footer class="footerRS">
 			<div class="footer-izq">
 				<div class="logo">
 					<img
@@ -218,7 +240,7 @@
 					<div class="input-group">
 						<input
 							type="email"
-							class="input"
+							class="footer_input"
 							id="Email"
 							name="Email"
 							placeholder="alvarofriasruiz03@gmail.com"
