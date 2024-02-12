@@ -1,22 +1,65 @@
 <header>
-	<img
-		class="header_logo"
-		src="../assets/images/logo_chico.png"
-		alt="logo"
-		width="20%"
-	/>
-	<h4>PixelPlay</h4>
-	<input
-		class="header_search"
-		type="search"
-		name=""
-		id=""
-		placeholder="Busca aqui tu producto"
-	/>
-	<div class="header_carrito">
-		<a href="carrito.html">
-			<span class="material-icons"> shopping_cart </span>
-			<span class="header_carrito_count">1</span></a
-		>
+	<div class="header">
+		<div class="header_logo">
+			<img
+				class="header_logo_img"
+				src="../assets/images/logo_chico.png"
+				alt="logo"
+				width="20%"
+			/>
+			<h4>PixelPlay</h4>
+		</div>
+
+		<div class="search_wrap">
+			<div class="search_box">
+				<div class="search_btn btn_common">
+					<span class="search_icon material-symbols-outlined"> search </span>
+				</div>
+				<input
+					type="text"
+					name=""
+					id=""
+					class="input"
+					placeholder="Buscar..."
+				/>
+			</div>
+		</div>
+
+		<div class="header_carrito">
+			<a href="carrito.html">
+				<span class="material-icons header_icon"> shopping_cart </span>
+				<span class="header_carrito_count">1</span>
+			</a>
+		</div>
 	</div>
 </header>
+
+<nav class="nav">
+	<ul class="nav_list --left">
+		<li class="nav_list_item">
+			<a class="nav_list_item_link" href="productos.html"
+				>Todos los productos</a
+			>
+		</li>
+		<li class="nav_list_item">
+			<a class="nav_list_item_link" href="nosotros.html">Sobre nosotros</a>
+		</li>
+		<li class="nav_list_item">
+			<a class="nav_list_item_link" href="contacto.html">Contacto</a>
+		</li>
+		<li class="nav_list_item">
+			<a class="nav_list_item_link" href="#">Gadgets</a>
+		</li>
+		<li class="nav_list_item">
+			<a class="nav_list_item_link" href="#">Ofertas</a>
+		</li>
+	</ul>
+	<ul class="nav_list --right">
+		<li class="nav_list_item">
+			<a class="nav_list_item_link" href="productos.html">Mis pedidos</a>
+		</li>
+		<li class="nav_list_item">
+			<a class="nav_list_item_link" href="index.html">Logout</a>
+		</li>
+	</ul>
+</nav>
