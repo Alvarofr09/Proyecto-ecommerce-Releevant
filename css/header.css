@@ -125,9 +125,8 @@ ul.nav_list {
 	justify-content: space-around;
 }
 
-ul.nav_list.--left {
-	display: flex;
-	justify-content: space-around;
+ul li {
+	margin: 0 10px;
 }
 
 .nav_list_item {
