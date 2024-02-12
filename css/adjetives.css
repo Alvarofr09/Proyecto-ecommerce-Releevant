@@ -6,6 +6,7 @@
 	grid-template-columns: repeat(4, 1fr);
 	gap: 15px;
 	place-items: center;
+	margin: 20px 0;
 }
 
 .adjetivos-objetos {
