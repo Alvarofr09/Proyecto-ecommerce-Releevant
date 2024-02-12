@@ -140,14 +140,24 @@ ul li {
 }
 
 /*
+	* Media query de 930px, que hace que el nav se achique
+*/
+@media screen and (max-width: 930px) {
+	.search_wrap {
+		margin: 30px;
+		width: 90%;
+	}
+
+	.search_wrap .search_box {
+		max-width: none;
+	}
+}
+
+/*
 	* Media query de 800px, que hace que el nav se achique
 */
 @media screen and (max-width: 800px) {
-	/* .search_wrap {
-		display: flex;
-	} */
-
-	.search_wrap .search_box {
-		max-width: 400px;
+	.search_wrap {
+		width: 80%;
 	}
 }
