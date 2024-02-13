@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS Usuarios, Productos, Categorias, Pedidos, Detalles_pedido;
+DROP TABLE IF EXISTS Usuarios, Productos, Categorias, Pedidos, Detalles_pedido, Favoritos, Carrito;
 
 
 CREATE TABLE Usuarios (
