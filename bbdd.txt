@@ -1,0 +1,42 @@
+CREATE TABLE Usuarios (
+    ID_usuario SERIAL PRIMARY KEY,
+    Nombre_usuario VARCHAR(50) NOT NULL,
+    Correo_electronico VARCHAR(100) UNIQUE NOT NULL,
+    Contraseña VARCHAR(255) NOT NULL,
+    Direccion_envio VARCHAR(255),
+    Informacion_pago VARCHAR(255)
+);
+
+CREATE TABLE Categorias (
+    ID_categoria SERIAL PRIMARY KEY,
+    Nombre_categoria VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Productos (
+    ID_producto SERIAL PRIMARY KEY,
+    Nombre_producto VARCHAR(100) NOT NULL,
+    Descripcion TEXT,
+    Precio DECIMAL(10, 2) NOT NULL,
+    Stock INT NOT NULL,
+    ID_categoria INT,
+    FOREIGN KEY (ID_categoria) REFERENCES Categorias(ID_categoria),
+    Imagen_producto VARCHAR(255)
+);
+
+CREATE TABLE Pedidos (
+    ID_pedido SERIAL PRIMARY KEY,
+    ID_usuario INT,
+    Fecha_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Estado_pedido ENUM('pendiente', 'enviado', 'entregado') DEFAULT 'pendiente',
+    FOREIGN KEY (ID_usuario) REFERENCES Usuarios(ID_usuario)
+);
+
+CREATE TABLE Detalles_pedido (
+    ID_detalle_pedido SERIAL PRIMARY KEY,
+    ID_pedido INT,
+    ID_producto INT,
+    Cantidad INT NOT NULL,
+    Precio_unitario DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (ID_pedido) REFERENCES Pedidos(ID_pedido),
+    FOREIGN KEY (ID_producto) REFERENCES Productos(ID_producto)
+);
