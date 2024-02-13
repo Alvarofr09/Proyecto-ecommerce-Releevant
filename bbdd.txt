@@ -53,4 +53,13 @@ CREATE TABLE Favoritos (
     UNIQUE (ID_usuario, ID_producto) -- Asegura que un usuario solo pueda tener un producto una vez en favoritos
 );
 
+CREATE TABLE Carrito (
+    ID_carrito INT AUTO_INCREMENT PRIMARY KEY,
+    ID_usuario INT,
+    ID_producto INT,
+    Cantidad INT NOT NULL,
+    FOREIGN KEY (ID_usuario) REFERENCES Usuarios(ID_usuario),
+    FOREIGN KEY (ID_producto) REFERENCES Productos(ID_producto)
+);
+
 
