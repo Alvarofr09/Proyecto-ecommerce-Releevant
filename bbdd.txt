@@ -43,3 +43,14 @@ CREATE TABLE Detalles_pedido (
     FOREIGN KEY (ID_pedido) REFERENCES Pedidos(ID_pedido),
     FOREIGN KEY (ID_producto) REFERENCES Productos(ID_producto)
 );
+
+CREATE TABLE Favoritos (
+    ID_favorito INT AUTO_INCREMENT PRIMARY KEY,
+    ID_usuario INT,
+    ID_producto INT,
+    FOREIGN KEY (ID_usuario) REFERENCES Usuarios(ID_usuario),
+    FOREIGN KEY (ID_producto) REFERENCES Productos(ID_producto),
+    UNIQUE (ID_usuario, ID_producto) -- Asegura que un usuario solo pueda tener un producto una vez en favoritos
+);
+
+
