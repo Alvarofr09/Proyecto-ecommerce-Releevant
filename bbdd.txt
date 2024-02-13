@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS Usuarios, Productos, Categorias, Pedidos, Detalles_pedido;
+
+
 CREATE TABLE Usuarios (
     ID_usuario SERIAL PRIMARY KEY,
     Nombre_usuario VARCHAR(50) NOT NULL,
