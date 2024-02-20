@@ -1,12 +1,20 @@
 DROP TABLE IF EXISTS Usuarios, Productos, Categorias, Pedidos, Detalles_pedido, Favoritos, Carrito;
+DROP TYPE IF EXISTS Direccion, order_state;
 
+
+CREATE TYPE Direccion AS (
+    calle VARCHAR(255),
+    ciudad VARCHAR(100),
+    pais VARCHAR(50),
+    codigo_postal VARCHAR(10)
+);
 
 CREATE TABLE Usuarios (
     ID_usuario SERIAL PRIMARY KEY,
     Nombre_usuario VARCHAR(50) NOT NULL,
     Correo_electronico VARCHAR(100) UNIQUE NOT NULL,
     Contraseña VARCHAR(255) NOT NULL,
-    Direccion_envio VARCHAR(255),
+    Direccion Direccion,
     Informacion_pago VARCHAR(255)
 );
 
@@ -21,45 +29,51 @@ CREATE TABLE Productos (
     Descripcion TEXT,
     Precio DECIMAL(10, 2) NOT NULL,
     Stock INT NOT NULL,
-    ID_categoria INT,
-    FOREIGN KEY (ID_categoria) REFERENCES Categorias(ID_categoria),
+    Puntuacion DECIMAL(3, 1),
+    on_stock boolean,
+    categoria_id INT,
+    FOREIGN KEY (categoria_id) REFERENCES Categorias(ID_categoria),
     Imagen_producto VARCHAR(255)
 );
 
+CREATE TYPE order_state AS ENUM ('Cart', 'Created', 'Processing', 'Canceled',
+'Complete');
+
 CREATE TABLE Pedidos (
     ID_pedido SERIAL PRIMARY KEY,
-    ID_usuario INT,
-    Fecha_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    Estado_pedido ENUM('pendiente', 'enviado', 'entregado') DEFAULT 'pendiente',
-    FOREIGN KEY (ID_usuario) REFERENCES Usuarios(ID_usuario)
+    usuario_id INT,
+    total_price DECIMAL(9,2),
+    Fecha_pedido Date,
+    Estado_pedido order_state,
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID_usuario)
 );
 
 CREATE TABLE Detalles_pedido (
     ID_detalle_pedido SERIAL PRIMARY KEY,
-    ID_pedido INT,
-    ID_producto INT,
+    pedido_id INT,
+    producto_id INT,
     Cantidad INT NOT NULL,
-    Precio_unitario DECIMAL(10, 2) NOT NULL,
-    FOREIGN KEY (ID_pedido) REFERENCES Pedidos(ID_pedido),
-    FOREIGN KEY (ID_producto) REFERENCES Productos(ID_producto)
+    subtotal DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (pedido_id) REFERENCES Pedidos(ID_pedido),
+    FOREIGN KEY (producto_id) REFERENCES Productos(ID_producto)
 );
 
 CREATE TABLE Favoritos (
-    ID_favorito INT AUTO_INCREMENT PRIMARY KEY,
-    ID_usuario INT,
-    ID_producto INT,
-    FOREIGN KEY (ID_usuario) REFERENCES Usuarios(ID_usuario),
-    FOREIGN KEY (ID_producto) REFERENCES Productos(ID_producto),
-    UNIQUE (ID_usuario, ID_producto) -- Asegura que un usuario solo pueda tener un producto una vez en favoritos
+    ID_favorito SERIAL PRIMARY KEY,
+    usuario_id INT,
+    producto_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID_usuario),
+    FOREIGN KEY (producto_id) REFERENCES Productos(ID_producto),
+    UNIQUE (usuario_id, producto_id)
 );
 
 CREATE TABLE Carrito (
-    ID_carrito INT AUTO_INCREMENT PRIMARY KEY,
-    ID_usuario INT,
-    ID_producto INT,
+    ID_carrito SERIAL PRIMARY KEY,
+    usuario_id INT,
+    producto_id INT,
     Cantidad INT NOT NULL,
-    FOREIGN KEY (ID_usuario) REFERENCES Usuarios(ID_usuario),
-    FOREIGN KEY (ID_producto) REFERENCES Productos(ID_producto)
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID_usuario),
+    FOREIGN KEY (producto_id) REFERENCES Productos(ID_producto)
 );
 
 
