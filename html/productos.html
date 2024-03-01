@@ -16,13 +16,41 @@
 	</head>
 	<body>
 		<header>
-			<img src="" alt="logo" width="20%" />
-			<h4>MyTiendaReleevant</h4>
-			<input type="search" name="" id="" placeholder="Busca aqui tu producto" />
-			<a href="carrito.html"
-				><span class="material-icons"> shopping_cart </span>Carrito
-				<span>1</span></a
-			>
+			<div class="header">
+				<div class="header_logo">
+					<img
+						class="header_logo_img"
+						src="../assets/images/logo_chico.png"
+						alt="logo"
+						width="20%"
+					/>
+					<h4>PixelPlay</h4>
+				</div>
+
+				<div class="search_wrap">
+					<div class="search_box">
+						<div class="search_btn btn_common">
+							<span class="search_icon material-symbols-outlined">
+								search
+							</span>
+						</div>
+						<input
+							type="text"
+							name=""
+							id=""
+							class="input"
+							placeholder="Buscar..."
+						/>
+					</div>
+				</div>
+
+				<div class="header_carrito">
+					<a href="carrito.html">
+						<span class="material-icons header_icon"> shopping_cart </span>
+						<span class="header_carrito_count">1</span>
+					</a>
+				</div>
+			</div>
 		</header>
 
 		<nav class="nav">
