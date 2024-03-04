@@ -30,8 +30,12 @@
 }
 
 .btn-primary {
-	background-color: #00a6fb;
+	background-color: #30cfd0;
 	color: white;
+}
+
+.btn-primary:hover {
+	background-color: #00adb5;
 }
 
 .btn-secondary {
@@ -39,6 +43,9 @@
 	color: #051923;
 }
 
+.card-img-top {
+	min-height: 286.64px;
+}
 /*
 	* Darle formato a la barra de scroll lateral
 	? Mejorarla
